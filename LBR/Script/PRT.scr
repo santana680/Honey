@@ -1,0 +1,373 @@
+# Library script
+# 
+# Exported from /Users/pighixxx/bq/Projects/Honey/v2/LBR/Volks73-NXPSemiconductors.lbr at 05/10/15 14:17
+# 
+# EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+# 
+Set Wire_Bend 2;
+# Grid changed to 'mm' to avoid loss of precision!
+Grid mm;
+Layer   1 Top;
+Layer  16 Bottom;
+Layer  17 Pads;
+Layer  18 Vias;
+Layer  19 Unrouted;
+Layer  20 Dimension;
+Layer  21 tPlace;
+Layer  22 bPlace;
+Layer  23 tOrigins;
+Layer  24 bOrigins;
+Layer  25 tNames;
+Layer  26 bNames;
+Layer  27 tValues;
+Layer  28 bValues;
+Layer  29 tStop;
+Layer  30 bStop;
+Layer  31 tCream;
+Layer  32 bCream;
+Layer  33 tFinish;
+Layer  34 bFinish;
+Layer  35 tGlue;
+Layer  36 bGlue;
+Layer  37 tTest;
+Layer  38 bTest;
+Layer  39 tKeepout;
+Layer  40 bKeepout;
+Layer  41 tRestrict;
+Layer  42 bRestrict;
+Layer  43 vRestrict;
+Layer  44 Drills;
+Layer  45 Holes;
+Layer  46 Milling;
+Layer  47 Measures;
+Layer  48 Document;
+Layer  49 Reference;
+Layer  51 tDocu;
+Layer  52 bDocu;
+Layer  90 Modules;
+Layer  91 Nets;
+Layer  92 Busses;
+Layer  93 Pins;
+Layer  94 Symbols;
+Layer  95 Names;
+Layer  96 Values;
+Layer  97 Info;
+Layer  98 Guide;
+Description '\
+<h1>Volks73''s Library for NXP Semiconductor Parts</h1>\n\
+<p>\n\
+<a href="https://github.com/volks73/eagle-libraries/">Repository</a>\n\
+</p>\n\
+<h3>Licensing:</h3> \n\
+<p>\n\
+Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0), <a href="http://creativecommons.org/licenses/by-sa/3.0/">http://creativecommons.org/licenses/by-sa/3.0/</a>. \n\
+</p>\n\
+<p>\n\
+For attribution, please provide a link in any documentation or design files to the repository on Github. \n\
+</p>';
+
+Edit 'P82B715.sym';
+Layer 94;
+Change Style continuous;
+Wire  0.254 (-10.16 -5.08) (-10.16 7.62) (10.16 7.62) (10.16 -5.08) \
+      (-10.16 -5.08);
+Pin 'LDA' io none middle R180 pin 0 (15.24 2.54);
+Pin 'LCL' io none middle R180 pin 0 (15.24 0);
+Pin 'SDA' io none middle R0 pin 0 (-15.24 2.54);
+Pin 'SCL' io none middle R0 pin 0 (-15.24 0);
+Layer 95;
+Change Size 1.778;
+Change Ratio 8;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R0 (-10.16 8.89);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (-10.16 -7.62);
+
+Edit 'PRTR5V0U2X.sym';
+Pin 'IO1' io none middle R0 pin 0 (-10.16 2.54);
+Pin 'IO2' io none middle R0 pin 0 (-10.16 0);
+Layer 94;
+Wire  0.254 (5.08 7.62) (-5.08 7.62) (-5.08 -5.08) (5.08 -5.08) \
+      (5.08 7.62);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Change Font vector;
+Text '>NAME' R0 (-5.08 8.89);
+Layer 96;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R0 (-5.08 -7.62);
+
+Edit 'SUPPLY.sym';
+Pin 'VCC' io none middle R270 both 0 (0 12.7);
+Pin 'GND' io none middle R90 both 0 (0 -12.7);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Change Font proportional;
+Text '>NAME' R90 (-2.54 -7.62);
+Layer 95;
+Change Size 1.778;
+Change Align bottom left;
+Text '>VALUE' R90 (3.81 -7.62);
+
+Edit 'SOIC-8.pac';
+Description '\
+<h1>Small Outline Integrated Circuit (SOIC) 8-Pin</h1>\n\
+<h3>Aliases</h3>\n\
+<ul>\n\
+<li>8-SO</li>\n\
+</ul>';
+Layer 1;
+Smd '4' 1.27 0.635 -0 R0 (-3.0734 -1.905);
+Layer 1;
+Smd '3' 1.27 0.635 -0 R0 (-3.0734 -0.635);
+Layer 1;
+Smd '2' 1.27 0.635 -0 R0 (-3.0734 0.635);
+Layer 1;
+Smd '1' 1.27 0.635 -0 R0 (-3.0734 1.905);
+Layer 1;
+Smd '5' 1.27 0.635 -0 R0 (3.0734 -1.905);
+Layer 1;
+Smd '6' 1.27 0.635 -0 R0 (3.0734 -0.635);
+Layer 1;
+Smd '7' 1.27 0.635 -0 R0 (3.0734 0.635);
+Layer 1;
+Smd '8' 1.27 0.635 -0 R0 (3.0734 1.905);
+Layer 21;
+Wire  0.127 (-2.032 -2.54) (-2.032 2.54) (2.032 2.54) (2.032 -2.54) \
+      (-2.032 -2.54);
+Layer 25;
+Change Size 1.27;
+Change Align bottom left;
+Text '>NAME' R0 (-2.54 3.175);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R0 (-3.175 -4.445);
+Layer 51;
+Rect R0 (2.032 1.6637) (3.0734 2.1463);
+Layer 51;
+Rect R0 (2.032 0.3937) (3.0734 0.8763);
+Layer 51;
+Rect R0 (2.032 -0.8763) (3.0734 -0.3937);
+Layer 51;
+Rect R0 (2.032 -0.8763) (3.0734 -0.3937);
+Layer 51;
+Rect R0 (2.032 -2.1463) (3.0734 -1.6637);
+Layer 51;
+Rect R0 (-3.0734 1.6637) (-2.032 2.1463);
+Layer 51;
+Rect R0 (-3.0734 1.6637) (-2.032 2.1463);
+Layer 51;
+Rect R0 (-3.0734 0.3937) (-2.032 0.8763);
+Layer 51;
+Rect R0 (-3.0734 0.3937) (-2.032 0.8763);
+Layer 51;
+Rect R0 (-3.0734 -0.8763) (-2.032 -0.3937);
+Layer 51;
+Rect R0 (-3.0734 -2.1463) (-2.032 -1.6637);
+Layer 21;
+Circle 0.127 (-1.27 1.905) (-0.9525 1.905);
+
+Edit 'SOT-143B.pac';
+Description '<h1>Small-Outline Transistor (SOT) 143B</h1>';
+Layer 1;
+Smd '1' 1 0.6 -0 R0 (-0.75 -1.05);
+Layer 1;
+Smd '2' 0.6 0.6 -0 R0 (0.95 -1.05);
+Layer 1;
+Smd '3' 0.6 0.6 -0 R0 (0.95 1.05);
+Layer 1;
+Smd '4' 0.6 0.6 -0 R0 (-0.95 1.05);
+Layer 21;
+Wire  0.127 (-1.5 -0.65) (-1.5 0.65) (1.5 0.65) (1.5 -0.65) \
+      (-1.5 -0.65);
+Layer 51;
+Rect R0 (-1.19 0.7) (-0.71 1.15);
+Layer 51;
+Rect R0 (0.71 0.7) (1.19 1.15);
+Layer 51;
+Rect R0 (0.71 -1.15) (1.19 -0.7);
+Layer 51;
+Rect R0 (-1.19 -1.15) (-0.31 -0.7);
+Layer 25;
+Change Size 1.27;
+Change Align bottom left;
+Text '>NAME' R0 (-3 2);
+Layer 27;
+Change Size 1.27;
+Change Align bottom left;
+Text '>VALUE' R0 (-3.5 -3);
+
+Edit 'P82B715?.dev';
+Prefix 'U';
+Description '\
+<h1>I<sup>2</sup>C-Bus Extender</h1>\n\
+<h2>I<sup>2</sup>C-bus extender</h2>\n\
+<h3>Documentation</h3>\n\
+<ul>\n\
+<li><a href="http://www.nxp.com/documents/data_sheet/P82B715.pdf">Datasheet</a></li>\n\
+</ul>\n\
+<h3>General Description</h3>\n\
+<p>\n\
+The P82B715 is a bipolar IC intended for application in I2C-bus and derivative bus\n\
+systems. While retaining all the operating modes and features of the I<sup>2</sup>C-bus it permits\n\
+extension of the practical separation distance between components on the I<sup>2</sup>C-bus by\n\
+buffering both the data (SDA) and the clock (SCL) lines.\n\
+</p>\n\
+<p>\n\
+The I<sup>2</sup>C-bus capacitance limit of 400 pF restricts practical communication distances to a\n\
+few meters. Using one P82B715 at each end of a long cable (connecting Lx/Ly to Lx/Ly)\n\
+reduces that cable’s loading on the linked I<sup>2</sup>C-buses by a factor of 10 and allows the total\n\
+system capacitance load (all devices, cable, connectors, and traces or wires connected to\n\
+the I<sup>2</sup>C-bus) to be around 3000 pF while the loading on each I<sup>2</sup>C-bus on the Sx/Sy sides\n\
+remains below 400 pF. Longer cables or low-cost, general-purpose wiring may be used to\n\
+link I<sup>2</sup>C-bus based modules without degrading noise margins. Multiple P82B715s can be\n\
+connected together, linking their Lx/Ly ports, in a star or multi-point architecture as long as\n\
+the total capacitance of the system is less than about 3000 pF and each bus at an Sx/Sy\n\
+connection is well below 400 pF. This configuration, with the master and/or slave devices\n\
+attached to the Sx/Sy port of each P82B715, has full multi-master communication\n\
+capability. The P82B715 alone does not support voltage level translation, but it can be\n\
+simply implemented using low cost transistors when required. There is no restriction on\n\
+interconnecting the Sx/Sy I/Os, and, because the device output levels are always held\n\
+within 100 mV of input drive levels, P82B715 is compatible with bus buffers that use\n\
+voltage level offsets, e.g., PCA9511A, PCA9517, Sx/Sy side of P82B96.\n\
+</p>\n\
+<p>\n\
+The lower V<sub>OL</sub> level and ability to operate with any master, slave or bus buffer is the\n\
+primary advantage of the using the P82B715 for long distance buses at the disadvantage\n\
+of not isolating bus capacitance like the P82B96 or PCA9600 are able to do. The primary\n\
+disadvantage of the P82B96 and PCA9600 is that the static level offset needed to isolate\n\
+bus capacitance does not allow these devices to operate with other bus buffers with\n\
+special offset levels or with master/slaves that require a VIL lower than 0.8 V with noise\n\
+margin. A proven quick design-in point-to-point/multi-point circuit (Figure 9) is included in\n\
+Section 8.2 to allow rapid use of the P82B715 along with comparison waveforms so that\n\
+the designer can clearly see the trade-offs between the P82B715 and the\n\
+P82B96/PCA9600 and choose the type of device that is best for their application.\n\
+</p>\n\
+<h3>Features</h3>\n\
+<ul>\n\
+<li>Dual, bidirectional, unity voltage gain buffer with no external directional control required</li>\n\
+<li>Compatible with I2C-bus and its derivatives SMBus, PMBus, DDC, etc.</li>\n\
+<li>Logic signal levels may include (but not exceed) both supply and ground</li>\n\
+<li>Logic signal input voltage levels are output without change and are independent of VCC</li>\n\
+<li>×10 impedance transformation, but does not change logic voltage levels</li>\n\
+<li>Supply voltage range 3 V to 12 V</li>\n\
+<li>Clock speeds to at least 100 kHz and 400 kHz when other system delays permit</li>\n\
+<li>ESD protection exceeds 2500 V HBM per Mil. Std 883C-3015.7 and 400 V MM per JESD22-A115 (I/Os have diodes to VCC and GND)</li>\n\
+<li>Latch-up testing is done to JEDEC Standard JESD78 which exceeds 100 mA</li>\n\
+</ul>\n\
+<h3>Applications</h3>\n\
+<ul>\n\
+<li>Increase the total connected capacitance of an I2C-bus system to around 3000 pF</li>\n\
+<li>Drive I2C-bus signals over long cables to approximately 50 meters or 3000 pF</li>\n\
+<li>Drives ×10 lower impedance bus wiring for improved noise immunity</li>\n\
+<li>Multi-drop distribution of I2C-bus signals using low cost twisted-pair cables</li>\n\
+<li>AdvancedTCA radial IPMB architecture</li>\n\
+<li>Driving 30 mA Fm+ devices from standard 3 mA parts</li>\n\
+</ul>';
+Value off;
+Add P82B715 'U$1' next 0 (0 0);
+Add SUPPLY '-SUPPLY' request 0 (-25.4 0);
+Package 'SOIC-8' 'TD';
+Technology '';
+Technology '';
+Attribute MANUFACTURER 'NXP Semiconductors' constant;
+Attribute OPERATING_TEMPERATURE '-40C ~ 85C' constant;
+Attribute INPUT '2-Wire Buse' constant;
+Attribute PART_NUMBER 'P82B715TD,118' constant;
+Attribute SUPPLIER_URL 'http://www.digikey.com' constant;
+Attribute SUPPLIER_LINK '<a href="http://www.digikey.com">Home Page</a>' constant;
+Attribute DOCUMENTATION_URL 'http://www.nxp.com/documents/data_sheet/P82B715.pdf' constant;
+Attribute SIGNAL_CONDITIONING '-' constant;
+Attribute SUPPLIER_ITEM_NUMBER '568-1007-2-ND' constant;
+Attribute DELAY_TIME '-' constant;
+Attribute TYPE 'Buffer, ReDriver' constant;
+Attribute DATA_RATE '400kHz' constant;
+Attribute NUMBER_OF_CHANNELS '1' constant;
+Attribute CURRENT_SUPPLY '22mA' constant;
+Attribute CAPACITANCE-INPUT '3000pF' constant;
+Attribute SUPPLIER_ITEM_URL 'http://www.digikey.com/product-detail/en/P82B715TD,118/568-1007-2-ND/735621' constant;
+Attribute SUPPLIER_ITEM_LINK '<a href="http://www.digikey.com/product-detail/en/P82B715TD,118/568-1007-2-ND/735621">Details</a>' constant;
+Attribute DESCRIPTION 'IC REDRIVER I2C 1CH 400KHZ 8SO' constant;
+Attribute APPLICATIONS 'I2C' constant;
+Attribute OUTPUT '2-Wire Bus' constant;
+Attribute VOLTAGE_SUPPLY '4.5V ~ 12V' constant;
+Attribute DOCUMENTATION_LINK '<a href="http://www.nxp.com/documents/data_sheet/P82B715.pdf">Datasheet</a>' constant;
+Attribute SUPPLIER_NAME 'Digi-Key' constant;
+Connect  '-SUPPLY.GND' '4'  '-SUPPLY.VCC' '8'  'U$1.LCL' '2'  'U$1.LDA' '7'  'U$1.SCL' '3' \
+         'U$1.SDA' '6';
+
+Edit 'PRTR5V0U2X?.dev';
+Prefix 'U';
+Description '\
+<h1>I<sup>2</sup>C-Bus EDS Protection</h1>\n\
+<h2>Ulta low capacitance double rail-to-rail ESD protection diode</h2>\n\
+<h3>Documentation</h3>\n\
+<ul>\n\
+<li><a href="http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf">Datasheet</a></li>\n\
+</ul>\n\
+<h3>General Description</h3>\n\
+<p>\n\
+Ultra low capacitance rail-to-rail ElectroStatic Discharge (ESD) protection diode in a small SOT143B Surface-Mounted Device (SMD) plastic package designed to protect two Hi-Speed data lines or high-frequency signal lines from the damage caused by ESD and other transients.\n\
+</p>\n\
+<p>\n\
+PRTR5V0U2X incorporates two pairs of ultra low capacitance rail-to-rail diodes as well as an additional ESD protection diode to ensure signal line protection even if no supply voltage is available.\n\
+</p>\n\
+<h3>Features</h3>\n\
+<ul>\n\
+<li>ESD protection of two Hi-Speed data lines or high-frequency signal lines</li>\n\
+<li>Ultra low input/output to ground capacitance: C<sub>(I/O-GND)</sub> = 1 pF</li>\n\
+<li>ESD protection up to 8kV</li>\n\
+<li>IEC 61000-4-2, level 4 (ESD)</li>\n\
+<li>Very low clamping voltage due to an integrated additional ESD protection diode</li>\n\
+<li>Very low reverse current</li>\n\
+<li>Small SMD plastic package</li>\n\
+</ul>\n\
+<h3>Applications</h3>\n\
+<ul>\n\
+<li>USB 2.0 ports</li>\n\
+<li>Digital Video Interface (DVI)/High Definition Multimedia Interface (HDMI) interfaces</li>\n\
+<li>Mobile and cordless phones</li>\n\
+<li>Personal Digital Assistants (PDA)</li>\n\
+<li>Digital Cameras</li>\n\
+<li>Wide Area Network (WAN) / Local Area Network (LAN) systems</li>\n\
+<li>PCs, notebooks, printers, and other PC peripherals</li>\n\
+</ul>';
+Value off;
+Add PRTR5V0U2X 'U$1' next 0 (0 0);
+Add SUPPLY '-SUPPLY' request 0 (-25.4 0);
+Package 'SOT-143B' '';
+Technology '';
+Technology '';
+Attribute MANUFACTURER 'NXP Semiconductors' constant;
+Attribute OPERATING_TEMPERATURE '-40C ~ 85C' constant;
+Attribute PART_NUMBER 'PRTR5V0U2X,215' constant;
+Attribute SUPPLIER_URL 'http://www.digikey.com' constant;
+Attribute SUPPLIER_LINK '<a href="http://www.digikey.com">Home Page</a>' constant;
+Attribute DOCUMENTATION_URL 'http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf' constant;
+Attribute SUPPLIER_ITEM_NUMBER '568-4140-1-ND' constant;
+Attribute TYPE 'Steering (Rail to Rail)' constant;
+Attribute VOLTAGE_BREAKDOWN '6V' constant;
+Attribute SUPPLIER_ITEM_URL 'http://www.digikey.com/product-detail/en/PRTR5V0U2X,215/568-4140-1-ND/1589981' constant;
+Attribute CURRENT_PEAK_PULSE '-' constant;
+Attribute SUPPLIER_ITEM_LINK '<a href="http://www.digikey.com/product-detail/en/PRTR5V0U2X,215/568-4140-1-ND/1589981">Details</a>' constant;
+Attribute DESCRIPTION 'TVS DIODE 5.5VWM SOT143B' constant;
+Attribute POWER-PEAK_PULSE '-' constant;
+Attribute VOLTAGE_REVERSE '5.5V' constant;
+Attribute APPLICATIONS 'General Purpose' constant;
+Attribute MOUNTING_TYPE 'Surface Mount' constant;
+Attribute CAPACITANCE '1pF @ 1MHz' constant;
+Attribute POWER_LINE_PROTECTION 'Yes' constant;
+Attribute DOCUMENTATION_LINK '<a href="http://www.nxp.com/documents/data_sheet/PRTR5V0U2X.pdf">Datasheet</a>' constant;
+Attribute BIDIRECTIONAL_CHANNELS '2' constant;
+Attribute UNIDIRECTIONAL_CHANNELS '-' constant;
+Attribute SUPPLIER_NAME 'Digi-Key' constant;
+Attribute VOLTAGE_CLAMPING '-' constant;
+Connect  '-SUPPLY.GND' '1'  '-SUPPLY.VCC' '4'  'U$1.IO1' '2'  'U$1.IO2' '3';
+Grid inch;
